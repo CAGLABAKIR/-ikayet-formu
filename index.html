@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akıllı Resepsiyon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <p class="eyebrow">Dijital Karşılama Asistanı</p>
+        <h1>Modern Resepsiyon Akışı</h1>
+        <p class="muted">Rezervasyon doğrulama, oda seçimi, ödeme ve tek kullanımlık kapı QR kodu tek ekranda.</p>
+      </header>
+
+      <section class="card">
+        <div class="progress-wrap">
+          <div id="progressBar"></div>
+        </div>
+        <p class="step-label"><span id="stepNumber">1</span>/7. adım</p>
+
+        <form id="receptionForm"></form>
+
+        <div id="result" class="result hidden" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.4/build/qrcode.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
